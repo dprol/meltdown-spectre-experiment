@@ -1,0 +1,20 @@
+# Kernel vulnerability status - Xeon Bronze 3204 (Cascade Lake), kernel 5.15.0-186-generic
+# host: glacier   source: /sys/devices/system/cpu/vulnerabilities/
+
+gather_data_sampling: Mitigation: Microcode
+indirect_target_selection: Mitigation: Aligned branch/return thunks
+itlb_multihit: KVM: Mitigation: VMX disabled
+l1tf: Not affected
+mds: Not affected
+meltdown: Not affected
+mmio_stale_data: Mitigation: Clear CPU buffers; SMT disabled
+reg_file_data_sampling: Not affected
+retbleed: Mitigation: Enhanced IBRS
+spec_rstack_overflow: Not affected
+spec_store_bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+spectre_v1: Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+spectre_v2: Mitigation: Enhanced / Automatic IBRS; IBPB: conditional; PBRSB-eIBRS: SW sequence; BHI: SW loop, KVM: SW loop
+srbds: Not affected
+tsa: Not affected
+tsx_async_abort: Mitigation: TSX disabled
+vmscape: Mitigation: IBPB before exit to userspace
