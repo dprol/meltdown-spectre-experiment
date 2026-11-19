@@ -7,8 +7,11 @@ transient-execution vulnerabilities **Meltdown** (CVE-2017-5754) and **Spectre**
 mitigations.
 
 > These PoCs demonstrate *published, patched* CPU vulnerabilities for a course
-> experiment. Disabling CPU mitigations (`mitigations=off`) is only for an
-> isolated lab VM — never on a machine that handles real data.
+> experiment. This run was done on the course Linux server directly (not a VM),
+> with kernel mitigations left **ON** — the Spectre v1 PoC only reads its own
+> process memory, so it needs nothing disabled. Disabling CPU mitigations
+> (`mitigations=off`) was not done here and must never be done on a shared or
+> production machine.
 
 ## Result (this run)
 Tested on an **Intel Xeon Bronze 3204 (Cascade Lake)**, Ubuntu 22.04, kernel
